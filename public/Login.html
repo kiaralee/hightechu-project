@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <title>#Project</title>
+        <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+        <link rel="stylesheet" href="Login.css">
+
+
+        
+	
+		<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyC2yPzGyF9dkx6yE-ewS8b8zZtzi_efpe4",
+			authDomain: "hashtag-project-fc7fc.firebaseapp.com",
+			databaseURL: "https://hashtag-project-fc7fc.firebaseio.com",
+			projectId: "hashtag-project-fc7fc",
+			storageBucket: "hashtag-project-fc7fc.appspot.com",
+			messagingSenderId: "834581926794"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+		<script type="text/javascript" src="login.js"></script> 
+    </head>
+
+
+    <body> 
+      <center>
+
+      <div class="container">
+        <h1>#Project</h1>
+            <br>
+            <div class="login">
+           <input type="email" placeholder="E-Mail" id="email"><br>
+           <input type="password" placeholder="Password" id="pass"><br>
+		   <input type="Username" placeholder="Name" id="user"><br>
+		   <input type="tag" placeholder="#Code" id="code"><br>
+			</div>
+
+			<div class="buttons">
+				<button type="signin" onclick="go()">Sign In</button>
+				<button type="forgetpassword" onclick="resetPass()">Forget Password</button>
+			</div>
+		<div class="inputs">
+			<p class="small">Don't have an account?<br> <a href="signup.html">Sign up here!</a></p>
+		</div>
+	</div>
+    </center>
+</body>
+</html>

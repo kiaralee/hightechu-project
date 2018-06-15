@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <title>#Project</title>
+        <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+        <link rel="stylesheet" href="Login.css">
+        <script type="text/javascript" src="iota_script.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC2yPzGyF9dkx6yE-ewS8b8zZtzi_efpe4",
+    authDomain: "hashtag-project-fc7fc.firebaseapp.com",
+    databaseURL: "https://hashtag-project-fc7fc.firebaseio.com",
+    projectId: "hashtag-project-fc7fc",
+    storageBucket: "hashtag-project-fc7fc.appspot.com",
+    messagingSenderId: "834581926794"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="signup.js"></script>
+    </head>
+
+ 
+    <body>
+      <center>
+
+      <div class="container">
+        <h1>#Project</h1>
+            <br>
+		<div class="signup">
+           <input type="email" placeholder="E-mail" id="signemail"><br>
+           <input type="password" placeholder="Password" id="signpass"><br>
+		</div>
+		<div class="buttons">
+			<button type="signup" id="btnsignup" onclick="signup()">Create account</button>
+		</div>
+		
+		</div>
+    </center>
+</body>
+</html>

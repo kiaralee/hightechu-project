@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <title>Main</title>
+    <meta name="description" content="Community and group-centric social media">
+    <meta name="keywords" content="social, community, group">
+    <meta name="author" content="xx">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="iota_main.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyC2yPzGyF9dkx6yE-ewS8b8zZtzi_efpe4",
+      authDomain: "hashtag-project-fc7fc.firebaseapp.com",
+      databaseURL: "https://hashtag-project-fc7fc.firebaseio.com",
+      projectId: "hashtag-project-fc7fc",
+      storageBucket: "hashtag-project-fc7fc.appspot.com",
+      messagingSenderId: "834581926794"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Library imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Local Scripts -->
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body onload="displayFeed()">
+    <center>
+    <!-- MENU -->
+    <div class="contain">
+    <div class="side">
+      <div class="tab">
+        <a href="#1"><img class="first" src="icons/img-menu.png" alt="Expand"></a>
+        <div id="1"> 
+          <a href="#top"><img src="icons/img-add.png" alt="Add" title="Post" class="menuimg"></a><br>
+          <img src="icons/img-logout.png" alt="Logout" title="Logout" onclick="logout()"><br>
+          <a href="#2"><img class="small" src="icons/img-collapse.png" alt="Collapse" title="Collapse menu"></a>
+        </div>
+      </div>
+    </div>
+    <a href="#top">
+    <input type="text" id="txturl" placeholder="Add URL" title="#Project auto sizes and centers images. For best results, select a picture that is at least 400px in height and width"></input></a><br>
+    <textarea id="txtCaption" placeholder="Add a caption" maxlength="550"></textarea><br>
+    <center><button id="post" onclick='post()'>Post</button></center>
+    </div>
+    <br><br> 
+	
+    <!-- div to append to -->
+    <div id="contents">
+      <center>
+      </center>
+    </div>
+	
+	
+  </body>
+</html>

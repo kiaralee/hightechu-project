@@ -1,0 +1,255 @@
+	body{
+		background-color: #000;
+	}
+	input#txturl {
+			width: 30%;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: 1px solid #000;
+			cursor: text;
+			outline: none;
+	}
+	textarea {
+			width: 30%;
+			resize: none;
+			height: 180px;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: 1px solid #000;
+			cursor: text;
+			font-family: arial;
+			outline: none;
+	}
+	span#little {
+		opacity: 0.6;
+		font-size: 1vw;
+		width: 30%;
+		text-align: justify;
+	} 
+	input#txtcaption:hover, input#txtcaption:active, input#txturl:hover, input#txturl:active  {
+		outline: none;
+	} 
+
+	button#post {
+		display: inline-block;
+		width: 30%;
+		color: black;
+		padding: 10px 16px;
+		margin: 8px 0;
+		margin-right: 5px;
+		border: 1px solid #000;
+		cursor: pointer;
+		text-align: center;
+		background-color: #FFFF99;
+		outline: none;
+	}
+
+	.contain {
+		margin-top: 50;
+		margin-bottom: 15;
+	}
+	.main {
+			width: 100%;
+			vertical-align: top;
+		}
+	.side {
+		width: 80px;
+		padding-bottom: 20px;
+		margin-left: 0;
+		margin-bottom: 50;
+		position: fixed;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		vertical-align: top;
+		z-index: 99999; /* push to top */
+	}
+	.hidden {
+		display: none;
+	}
+	.basicbox {
+		width: 30%;
+		vertical-align: top;
+		margin-left: 50;
+		margin-right: 50;
+		margin-bottom: 50;
+		text-align: center;
+		display: inline-block;
+		background-color: #fff;
+		border: 3px solid rgba(165, 165, 165, 0.2);
+	}
+
+	/* FOR PURE CSS DROP DOWN MENU */
+	.tab img {
+		cursor: pointer;
+		width: 60px;
+		height: 60px;
+		opacity: 0.7;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tab img:hover {
+		opacity: 1;
+	}
+	img.first {
+		margin-top: -10;
+	}
+	img.small {
+		width: 30px;
+		height: 30px;
+	}
+
+	:target {
+		display: block;
+	}
+	.tab div {
+		opacity: 0;
+		-webkit-transition: .8s ease;
+		-moz-transition: 0.8s ease;
+	}
+	.tab div:target {
+		opacity: 1;
+	}
+	.tab div:not(:target) {
+		opacity: 0;
+	}
+
+	/* FOR OVERLAY ON GROUP PHOTO */
+	.container {
+		position: relative;
+		width: 100%;
+	}
+	.image {
+	  display: block;
+	  width: 100%;
+	  height: 400px;
+	  object-fit: cover; /* Do not scale the image */
+	  object-position: center; /* Center the image within the element */
+	  background-color: #000;
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		-webkit-transition: .8s ease;
+		-moz-transition: 0.8s ease;
+		background-color: rgba(165, 165, 165, 1);
+	}
+	.container:hover .overlay {
+		opacity: 1;
+	}
+	.text {
+		position: absolute;
+		font-size: 1vw;
+		width: 90%;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: justify;
+	}
+	.comments {
+		display: none;
+		position: absolute;
+		font-size: 1.0vw;
+		width: 90%;
+		top: 50%;
+		left: 50%;
+		height: 100%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.textComments {
+		height: 12%;
+		padding-top: 5%;
+		text-align: left;
+	}
+	.textComments span {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		margin-bottom: 4%;
+		border-bottom: 0.2vw solid rgba(75,75,75,0.3);
+	}
+	.textComments input {
+		display: inline-block;
+		font-size: 1.0vw;
+		cursor: text;
+		color: #4b4b4b;
+		font-weight: bold;
+		background-color: rgba(75, 75, 75, 0);
+		border: 0;
+		outline: 0;
+	}
+	.space {
+		height: 6%;
+	}
+	.scrolling {
+		/*padding-top: 20px;*/
+		height: 73%;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: text-top;
+		text-align: left;
+		overflow-y: auto;
+		direction: rtl;
+	}
+	.ltrComments {
+		direction: ltr;
+	}
+
+
+
+	.scrolling::-webkit-scrollbar {
+		width: 0.3vw;
+		display: block;
+	}
+	.scrolling::-webkit-scrollbar-track {
+		color: rgba(75, 75, 75, 0.3);
+	}
+	.scrolling::-webkit-scrollbar-thumb {
+		opacity: 0.5;
+		background-color: rgba(75, 75, 75, 0.3);
+	}
+	.post {
+		margin-left: 6.9vw;
+		background-color: transparent;
+		border: none;
+		font-family: arial;
+		color: #878787;
+		text-decoration: none;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.post:hover {
+		color: #4b4b4b;
+	}
+	.post:active, .post:focus {
+		border: none;
+		outline: 0;
+	}
+
+
+	.buttons {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 10;
+	}
+	img.click {
+		height: 3.2vw;
+		width: 3.2vw;
+		opacity: 0.5;
+		cursor: pointer;
+		margin-top: -10px;
+	}
+	img.click:hover {
+		opacity: 1;
+	}

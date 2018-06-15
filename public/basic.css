@@ -1,0 +1,34 @@
+body {
+	color: #4b4b4b;
+	background-color: #f8f8f8;
+	font-family: arial;
+	font-size: 1.4 vw;
+	line-height: 1.6;
+	margin: auto;
+	padding: 0;
+}
+h1 {
+	font-size: 3vw;
+}
+h2 {
+	font-size: 2.2vw;
+}
+a:link, a:active, a:visited {
+	color: #878787;
+	text-decoration: none;
+}
+a:hover {
+	color: #4b4b4b;
+}
+.basic { /* basic styling */
+	width: 30%;
+	text-align: center;
+	margin: 50;
+	padding: 20px;
+	display: inline-block;
+	background-color: #fff;
+	border: 3px solid rgba(165, 165, 165, 0.2); /* hex code #a5a5a5 */
+}
+button{
+	background-color: #FFFF99;
+}
